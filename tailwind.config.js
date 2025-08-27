@@ -2,6 +2,12 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
+  ],
+  safelist: [
+    {
+      pattern: /mil-/   // Keep all classes starting with "mil-"
+    }
   ],
   theme: {
     extend: {
@@ -21,4 +27,4 @@ module.exports = {
     },
   },
   plugins: [],
-} 
+}
